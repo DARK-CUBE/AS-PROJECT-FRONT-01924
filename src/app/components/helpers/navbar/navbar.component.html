@@ -1,1 +1,70 @@
-<p>navbar works!</p>
+<header class="header navbar navbar-expand-lg navbar-dark position-absolute navbar-sticky">
+    <div class="container px-3">
+      <a routerLink="/" class="navbar-brand pe-3">
+        Astoray Structures
+      </a>
+      <div id="navbarNav" class="offcanvas offcanvas-end bg-dark">
+        <div class="offcanvas-header border-bottom border-light">
+          <h5 class="offcanvas-title text-white">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a routerLink="/" class="nav-link">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <!--Zona en el primer menu desplegable-->
+              <a routerLink="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Categorias</a>
+              <div class="dropdown-menu dropdown-menu-dark p-0">
+                <div class="d-lg-flex">
+                  <div class="mega-dropdown-column d-flex justify-content-center align-items-center rounded-3 rounded-end-0 px-0" style="margin: -1px; background-color: #f3f6ff;">
+                    <img src="assets/img/landings.jpg" alt="Landings">
+                  </div>
+                  <div class="mega-dropdown-column pt-lg-3 pb-lg-4" style="--si-mega-dropdown-column-width: 15rem;">
+                    <h6 class="text-light px-3 mb-2">Servicios</h6>
+                    <ul class="list-unstyled mb-0">
+                      <li><a routerLink="index-2.html" class="dropdown-item">Template Intro Page</a></li>
+                      <li><a routerLink="landing-mobile-app-showcase-v1.html" class="dropdown-item">Mobile App Showcase v.1</a></li>
+                      <li><a routerLink="landing-saas-v5.html" class="dropdown-item">SaaS v.5<span class="badge bg-success ms-2">New</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                    <h6 class="text-light px-3 mb-2">Productos</h6>
+                    <ul class="list-unstyled mb-0">
+                      <li><a routerLink="landing-startup.html" class="dropdown-item d-flex align-items-center">Startup</a></li>
+                      <li><a routerLink="landing-saas-v5.html" class="dropdown-item">SaaS v.5<span class="badge bg-success ms-2">New</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--Fin zona en el primer menu desplegable-->
+            </li>
+
+            <li class="nav-item">
+              <a routerLink="/about" class="nav-link">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a routerLink="/contact" class="nav-link">Contacto</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="offcanvas-header border-top border-light">
+          <span>DarkCube</span>
+        </div>      
+      </div>
+      <div class="pe-lg-1 ms-auto me-4" data-bs-theme="dark">
+        <div class="form-check form-switch mode-switch" data-bs-toggle="mode">
+          <input type="checkbox" class="form-check-input" id="theme-mode">
+          <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+          <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+        </div>
+      </div>
+      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </header>
